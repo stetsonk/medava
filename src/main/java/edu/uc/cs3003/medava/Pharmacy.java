@@ -11,7 +11,7 @@ public class Pharmacy {
         if (transporter.load(advil)) {
             System.out.println(String.format("Sending %s on the %s transporter.", advil.getMedicineName(), transporter.getTransporterName()));
         } else {
-            System.out.println(String.format("Cannont load %s on the %s transporter", advil.getMedicineName(), transporter.getTransporterName()));
+            System.out.println(String.format("Cannot load %s on the %s transporter", advil.getMedicineName(), transporter.getTransporterName()));
             return false;
         }
 
@@ -19,7 +19,7 @@ public class Pharmacy {
         if(transporter.load(activase)){
             System.out.println(String.format("Sending %s on the %s transporter.", activase.getMedicineName(), transporter.getTransporterName()));
         } else {
-            System.out.println(String.format("Cannont load %s on the %s transporter", activase.getMedicineName(), transporter.getTransporterName()));
+            System.out.println(String.format("Cannot load %s on the %s transporter", activase.getMedicineName(), transporter.getTransporterName()));
             return false;
         }
 
@@ -27,7 +27,7 @@ public class Pharmacy {
         if (transporter.load(oxycontin)) {
             System.out.println(String.format("Sending %s on the %s transporter.", oxycontin.getMedicineName(), transporter.getTransporterName()));
         } else {
-            System.out.println(String.format("Cannont load %s on the %s transporter", oxycontin.getMedicineName(), transporter.getTransporterName()));
+            System.out.println(String.format("Cannot load %s on the %s transporter", oxycontin.getMedicineName(), transporter.getTransporterName()));
             return false;
         }
         
@@ -35,7 +35,7 @@ public class Pharmacy {
         if (transporter.load(heart)) {
             System.out.println(String.format("Sending %s on the %s transporter.", heart.getMedicineName(), transporter.getTransporterName()));
         } else {
-            System.out.println(String.format("Cannont load %s on the %s transporter", heart.getMedicineName(), transporter.getTransporterName()));
+            System.out.println(String.format("Cannot load %s on the %s transporter", heart.getMedicineName(), transporter.getTransporterName()));
             return false;
         }
 
