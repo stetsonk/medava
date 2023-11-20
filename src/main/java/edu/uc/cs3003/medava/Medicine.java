@@ -1,8 +1,11 @@
 package edu.uc.cs3003.medava;
 
 public class Medicine {
+
+    private String medicineName;
+
     public Medicine(String medicineName){
-        medicineName = medicineName;
+        this.medicineName = medicineName;
     }
 
     public String getMedicineName(){
@@ -23,8 +26,5 @@ public class Medicine {
     public Double maximumTemperature(){
         return 100.0;
     }
-    
-
-    private String medicineName;
 
 }
