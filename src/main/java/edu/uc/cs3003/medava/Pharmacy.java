@@ -30,6 +30,15 @@ public class Pharmacy {
             System.out.println(String.format("Cannont load %s on the %s transporter", oxycontin.getMedicineName(), transporter.getTransporterName()));
             return false;
         }
+        
+        Jarvik heart = new Jarvik("01j9a9lk71");
+        if (transporter.load(heart)) {
+            System.out.println(String.format("Sending %s on the %s transporter.", heart.getMedicineName(), transporter.getTransporterName()));
+        } else {
+            System.out.println(String.format("Cannont load %s on the %s transporter", heart.getMedicineName(), transporter.getTransporterName()));
+            return false;
+        }
+
         return true;
     }
 

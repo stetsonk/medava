@@ -1,6 +1,6 @@
 package edu.uc.cs3003.medava;
 
-public abstract class Medicine {
+public abstract class Medicine implements Shippable{
 
     private String medicineName;
 
@@ -14,7 +14,7 @@ public abstract class Medicine {
         return medicineName;
     }
 
-    public boolean isTemperatureRangeAcceptable(Double lowTemperature, Double highTemperature){
+    public Boolean isTemperatureRangeAcceptable(Double lowTemperature, Double highTemperature){
         if(this.minimumTemperature() <= lowTemperature && highTemperature <= this.maximumTemperature()){
             return true;
         }
