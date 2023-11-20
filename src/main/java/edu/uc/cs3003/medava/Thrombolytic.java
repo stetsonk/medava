@@ -10,6 +10,7 @@ public class Thrombolytic extends Medicine {
     public MedicineSchedule getSchedule(){
         return MedicineSchedule.Uncontrolled;
     }
+    
     @Override
     public Double minimumTemperature(){
         System.out.println("Getting the minimum safe temperature for a Thrombolytic drug.");

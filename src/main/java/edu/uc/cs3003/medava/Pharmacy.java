@@ -22,6 +22,14 @@ public class Pharmacy {
             System.out.println(String.format("Cannont load %s on the %s transporter", activase.getMedicineName(), transporter.getTransporterName()));
             return false;
         }
+
+        Medicine oxycontin = new Oxycodone();
+        if (transporter.load(oxycontin)) {
+            System.out.println(String.format("Sending %s on the %s transporter.", oxycontin.getMedicineName(), transporter.getTransporterName()));
+        } else {
+            System.out.println(String.format("Cannont load %s on the %s transporter", oxycontin.getMedicineName(), transporter.getTransporterName()));
+            return false;
+        }
         return true;
     }
 
