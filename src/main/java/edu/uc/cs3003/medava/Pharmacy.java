@@ -7,7 +7,7 @@ public class Pharmacy {
     }
 
     public Boolean send(Transporter transporter) {
-        Medicine advil = new Medicine("Advil");
+        Medicine advil = new Ibuprofen();
         if (transporter.load(advil)) {
             System.out.println(String.format("Sending %s on the %s transporter.", advil.getMedicineName(), transporter.getTransporterName()));
         } else {

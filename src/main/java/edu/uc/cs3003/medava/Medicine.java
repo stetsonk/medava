@@ -1,8 +1,10 @@
 package edu.uc.cs3003.medava;
 
-public class Medicine {
+public abstract class Medicine {
 
     private String medicineName;
+
+    public abstract MedicineSchedule getSchedule();
 
     public Medicine(String medicineName){
         this.medicineName = medicineName;
